@@ -50,7 +50,7 @@ def Xnet(backbone_name='vgg16',
          decoder_use_batchnorm=True,
          n_upsample_blocks=5,
          upsample_rates=(2,2,2,2,2),
-         classes=255,  #testx
+         classes=3,  #testx
          activation='relu'): #testx
     """
 
