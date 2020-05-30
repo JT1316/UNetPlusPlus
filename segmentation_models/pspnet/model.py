@@ -55,8 +55,8 @@ def PSPNet(backbone_name='vgg16',
            use_batchnorm=True,
            dropout=None,
            final_interpolation='bilinear',
-           classes=21,
-           activation='softmax'):
+           classes=3,                 #changed 21
+           activation='relu'):      #changed softmax
     """
     Exploit the capability of global context information by different-regionbased
     context aggregation through pyramid pooling module together with the proposed
