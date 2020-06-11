@@ -168,7 +168,7 @@ def build_xnet(backbone, classes, skip_connection_layers,
     """
 
     x = Conv2D(classes, (3,3), padding='same', name='final_conv')(interm[n_upsample_blocks])
-    x = Activation(activation, name=activation)(x)
+    x = Activation('relu', name=activation)(x)
 
     model = Model(input, x)
 
